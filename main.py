@@ -228,7 +228,7 @@ class SinemaUygulamasi(QtWidgets.QDialog, Ui_Dialog):
 
         # db
         try:
-            self.client = MongoClient("mongodb+srv://sinema:sinemagercek@cluster0.dawscod.mongodb.net/") 
+            self.client = MongoClient("mongodb+srv://sinema:xxxx@cluster0.dawscod.mongodb.net/") 
             self.db = self.client["SinemaDB"]
             self.filmler_table = self.db["Filmler"]
             self.satis_table = self.db["BiletSatis"]
@@ -638,4 +638,5 @@ if __name__ == "__main__":
     app = QtWidgets.QApplication(sys.argv)
     pencere = SinemaUygulamasi()
     pencere.show()
+
     sys.exit(app.exec())
