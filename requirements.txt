@@ -1,0 +1,4 @@
+PyQt6
+pymongo
+beautifulsoup4
+dnspython
